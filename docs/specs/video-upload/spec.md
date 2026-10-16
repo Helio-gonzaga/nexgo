@@ -453,7 +453,7 @@ Validação:
 
 - Conferir por TypeScript os ramos discriminados e executar `npm run lint` e `npx tsc --noEmit`.
 - Verificar os casos da matriz unitária: MIME correspondente/vazio/divergente, extensão em caixa variada, arquivo vazio, limites `200.000.000` e `200.000.001`, e múltiplos arquivos.
-- Não criar um arquivo de teste não executável. O projeto atualmente não possui test runner ou script `test`; a cobertura automatizada unitária será adicionada quando houver uma solução aprovada que não viole RNF-010. Até lá, esses casos serão exercitados pelo fluxo no navegador e a limitação será reportada.
+- Executar os testes unitários com `node:test`, compilados por uma configuração TypeScript exclusiva para testes. Essa infraestrutura utiliza somente recursos já disponíveis no Node.js e no projeto, sem adicionar dependências ou violar RNF-010.
 
 ### Etapa 3 — Fronteira Client do upload
 
