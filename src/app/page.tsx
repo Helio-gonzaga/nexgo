@@ -58,25 +58,25 @@ export default function Home() {
             </p>
           </header>
 
-          <section aria-labelledby="upload-title" className="premium-panel upload-grid relative mt-8 overflow-hidden rounded-[var(--radius-feature)] p-4 sm:mt-10 sm:p-6 lg:p-8">
+          <section aria-labelledby="upload-title" className="premium-panel upload-grid relative mt-8 overflow-hidden rounded-[var(--radius-feature)] p-4 sm:mt-10 sm:p-5 lg:p-6">
             <div aria-hidden="true" className="pointer-events-none absolute top-0 left-1/2 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-blue-400/70 to-transparent" />
             <div aria-hidden="true" className="pointer-events-none absolute -top-28 left-1/2 size-64 -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
 
-            <div className="relative flex min-h-[22rem] flex-col items-center justify-center rounded-2xl border border-dashed border-blue-300/25 bg-[#061020]/72 px-5 py-10 text-center sm:min-h-[25rem] sm:px-10">
+            <div className="relative flex min-h-[22rem] flex-col items-center justify-center rounded-2xl border border-dashed border-blue-300/25 bg-[#061020]/72 px-5 py-10 text-center sm:min-h-0 sm:px-10 sm:py-9">
               <UploadIllustration />
-              <p className="mt-7 text-xs font-semibold tracking-[0.16em] text-accent-blue uppercase">Primeiro passo</p>
+              <p className="mt-5 text-xs font-semibold tracking-[0.16em] text-accent-blue uppercase">Primeiro passo</p>
               <h2 id="upload-title" className="mt-2 text-2xl font-semibold tracking-[-0.025em] text-white sm:text-3xl">
                 Adicione o vídeo da partida
               </h2>
               <p className="mt-3 max-w-lg text-sm leading-6 text-text-secondary sm:text-base">
-                Na próxima etapa, você poderá selecionar ou arrastar um arquivo para começar. O vídeo permanecerá no seu dispositivo.
+                Arraste o vídeo da partida ou selecione um arquivo para começar.
               </p>
 
-              <div aria-label="Ação de upload disponível em breve" className="mt-7 inline-flex min-h-11 items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 px-5 text-sm font-semibold text-white opacity-75 shadow-[0_10px_28px_rgba(37,99,235,0.24)]">
+              <button type="button" disabled className="mt-6 inline-flex min-h-11 cursor-not-allowed items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 px-5 text-sm font-semibold text-white opacity-55 shadow-[0_10px_28px_rgba(37,99,235,0.18)]" title="Disponível na próxima etapa">
                 Selecionar vídeo
-              </div>
+              </button>
 
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs text-text-muted">
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs text-text-muted">
                 <span>MP4 ou WebM</span>
                 <span aria-hidden="true" className="size-1 rounded-full bg-border-active/70" />
                 <span>Até 200 MB</span>
